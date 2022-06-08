@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { AppHeaderComponent } from './components/main-layout/app-header/app-header.component';
 import { AppBottomNavbarComponent } from './components/main-layout/app-bottom-navbar/app-bottom-navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppBottomNavbarComponent } from './components/main-layout/app-bottom-na
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
