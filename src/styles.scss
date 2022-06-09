@@ -6,6 +6,11 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
+
+$custom-typopgraphy: mat.define-typography-config(
+  $font-family: "Inter",
+);
+
 @include mat.core();
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
@@ -26,6 +31,7 @@ $dual-n-back-theme: mat.define-light-theme(
       accent: $dual-n-back-accent,
       warn: $dual-n-back-warn,
     ),
+    typography: $custom-typopgraphy,
   )
 );
 
@@ -46,5 +52,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
 }
